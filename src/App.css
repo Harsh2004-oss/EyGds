@@ -1,0 +1,192 @@
+:root {
+  --bg-color: rgb(245, 245, 245);
+  --text-color: rgb(66, 66, 66);
+  --button-color: rgb(76, 175, 80);
+  --button-hover-color: rgb(56, 142, 60);
+  --secondary-bg-color: rgb(255, 255, 255);
+  --secondary-text-color: rgb(158, 158, 158);
+  --input-bg-color: rgb(232, 245, 233);
+  --border-color: rgb(102, 187, 106);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-page {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-container {
+  display: flex;
+  width: 100%;
+}
+
+.form-section {
+  flex: 1;
+  background: var(--secondary-bg-color);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.form-section p {
+  margin-bottom: 20px;
+  color: var(--secondary-text-color);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--input-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color: var(--button-color);
+  text-decoration: none;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background-color: var(--button-hover-color);
+}
+
+.signup-link {
+  margin-top: 20px;
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.signup-link a {
+  color: var(--button-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.decorative-section {
+  flex: 1;
+  background: linear-gradient(to bottom right, var(--button-color), var(--button-hover-color));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.decorative-section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.decorative-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.card-preview {
+  background: var(--secondary-bg-color);
+  color: var(--button-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-preview p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-preview span {
+  font-size: 14px;
+  color: var(--text-color);
+}
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+}
+
+/* Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.nav-link {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #000;
+}
+
+
